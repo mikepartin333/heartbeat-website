@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Heartbeat Personal Assistant</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b1020;
+    color: #f5f7ff;
+    line-height: 1.6;
+}
+
+header {
+    border-bottom: 1px solid #252d45;
+    padding: 20px;
+}
+
+nav {
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    color: #b8c4e5;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero {
+    max-width: 900px;
+    margin: auto;
+    padding: 100px 25px 80px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 7px 14px;
+    border: 1px solid #3b4667;
+    border-radius: 30px;
+    color: #aebce0;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 1.05;
+    margin: 25px 0;
+}
+
+h1 span {
+    color: #8fa7ff;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 20px;
+    color: #b8c1d8;
+}
+
+.buttons {
+    margin-top: 35px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 22px;
+    margin: 5px;
+    border-radius: 10px;
+    background: #718cff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button.secondary {
+    background: #171e34;
+    border: 1px solid #36405d;
+}
+
+.cards {
+    max-width: 1050px;
+    margin: auto;
+    padding: 0 25px 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #11182b;
+    border: 1px solid #252f4b;
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.card .icon {
+    font-size: 30px;
+}
+
+.card h2 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #aeb8d0;
+}
+
+.notice {
+    max-width: 1000px;
+    margin: 0 auto 80px;
+    padding: 30px;
+    background: #11182b;
+    border: 1px solid #252f4b;
+    border-radius: 16px;
+}
+
+.notice p {
+    color: #b5bfd7;
+}
+
+footer {
+    border-top: 1px solid #252d45;
+    text-align: center;
+    padding: 30px;
+    color: #7f8ba7;
+}
+
+footer a {
+    color: #9fb0df;
+}
+
+@media(max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<a class="logo" href="index.html">♥ Heartbeat</a>
+
+<div>
+<a href="index.html">Home</a>
+<a href="sms.html">SMS</a>
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+</div>
+
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="badge">PERSONAL NOTIFICATION SYSTEM</div>
+
+<h1>
+Important things.<br>
+<span>Right when they matter.</span>
+</h1>
+
+<p>
+Heartbeat is a personal-use AI assistant and notification system
+that sends authorized SMS reminders and alerts to the owner and
+other approved recipients.
+</p>
+
+<div class="buttons">
+
+<a class="button" href="sms.html">
+SMS Notifications
+</a>
+
+<a class="button secondary" href="privacy.html">
+Privacy & Terms
+</a>
+
+</div>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<div class="icon">⏰</div>
+<h2>Reminders</h2>
+<p>
+Personal reminders for appointments, scheduled tasks,
+events, and other important things.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">⚠️</div>
+<h2>Alerts</h2>
+<p>
+Important household and system notifications, such as
+a detected water leak or equipment problem.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🤖</div>
+<h2>Personal AI</h2>
+<p>
+Heartbeat can use a local AI system to help generate
+useful personal reminders and notifications.
+</p>
+</div>
+
+</section>
+
+<section class="notice">
+
+<h2>Personal use only</h2>
+
+<p>
+Heartbeat is not a marketing service. Messages are sent only
+to individuals who have authorized the system to receive
+notifications. Messages may include personal reminders,
+appointment reminders, household alerts, and system
+notifications. Heartbeat does not send advertising or
+promotional SMS messages.
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Heartbeat Personal Assistant</p>
+
+<p>
+<a href="privacy.html">Privacy Policy</a>
+&nbsp;·&nbsp;
+<a href="terms.html">Terms & Conditions</a>
+&nbsp;·&nbsp;
+<a href="sms.html">SMS Program</a>
+</p>
+
+</footer>
+
+</body>
+</html>
